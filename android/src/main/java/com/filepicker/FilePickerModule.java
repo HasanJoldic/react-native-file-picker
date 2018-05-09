@@ -116,7 +116,7 @@ public class FilePickerModule extends ReactContextBaseJavaModule implements Acti
 
         requestCode = REQUEST_LAUNCH_FILE_CHOOSER;
         libraryIntent = new Intent(Intent.ACTION_GET_CONTENT);
-        libraryIntent.setType("*/*");
+        libraryIntent.setType("audio/mpeg");
         libraryIntent.addCategory(Intent.CATEGORY_OPENABLE);
 
         if (libraryIntent.resolveActivity(mReactContext.getPackageManager()) == null) {
